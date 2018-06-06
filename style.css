@@ -111,7 +111,11 @@ input, select {
 body{
   background-color: #F7F1C8;
 }
+
+text color #1C292B
 */
+
+/* HEADER */
 
 header{
   background-color: #FFFFFF;
@@ -120,7 +124,7 @@ header{
 }
 
 header .header-brand{
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: 900;
   color: #1C292B;
@@ -144,7 +148,7 @@ header nav ul li{
 }
 
 header nav ul li a{
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #1C292B;
@@ -152,6 +156,37 @@ header nav ul li a{
 
 header .header-projects{
   display: none;
+}
+
+/* MEDIA QUERY FOR HEADER */
+
+@media only screen and (min-width: 1000px) {
+
+  header .header-brand{
+    float: left;
+    margin: 38px 0;
+    text-align: left;
+    padding: 0 20px 0 40px;
+  }
+
+  header nav ul{
+    float: left;
+    margin: 20px 0 0 20px;
+  }
+
+  header nav ul li a{
+    line-height: 60px;
+  }
+
+  header .header-projects{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1C292B;
+    float: right;
+    padding: 38px 40px 0 20px;
+  }
 }
 
 /* INDEX */
@@ -172,7 +207,7 @@ header .header-projects{
 }
 
 .index-banner h2{
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 50px;
@@ -181,7 +216,7 @@ header .header-projects{
 }
 
 .index-banner h1{
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 50;
   font-style: italic;
@@ -198,11 +233,114 @@ header .header-projects{
 }
 
 .index-boxlink div h3{
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 100px;
   color: #1C292B;
   text-align: center;
   text-transform: uppercase;
+}
+
+/* MEDIA QUERY FOR INDEX */
+
+@media only screen and (min-width: 1000px) {
+
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner{
+    height: 500px;
+  }
+
+  .index-banner h1{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .index-boxlink{
+    overflow: hidden;
+  }
+
+  .index-boxlink div{
+    margin: 16px 20px 0;
+    width: calc(18% - 20px);
+    height: 150px;
+    background-color: #DEDFE2;
+    float: left;
+  }
+
+  .index-boxlink div h3{
+    line-height: 150px;
+  }
+}
+
+/* FOOTER */
+
+footer{
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #1C292B;
+  overflow: hidden;
+}
+
+footer ul{
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li{
+  display: block;
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #FCFEFF;
+}
+
+footer ul li a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #FCFEFF;
+  line-height: 20px;
+}
+
+.footer-links-main{
+  float: left;
+  line-height: 10px;
+}
+
+.footer-links-second{
+  float: right;
+  line-height: 50px;
+}
+
+.footer-links-second i{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-learn{
+  display: none;
+}
+
+/* MEDIA QUERY FOR FOOTER */
+
+@media only screen and (min-width: 1000px) {
+
+/*
+  .footer-learn{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #FCFEFF;
+    line-height: 20px;
+    padding-left: 300px;
+  }
+
+  */
+
 }
