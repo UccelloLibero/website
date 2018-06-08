@@ -115,9 +115,17 @@ body{
 text color #1C292B
 */
 
+main{
+  padding-top: 100px;
+}
+
 /* HEADER */
 
 header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: #FFFFFF;
   width: 100%;
   height: 100px;
@@ -277,6 +285,96 @@ header .header-projects{
   }
 }
 
+/* PROJECTS */
+
+.projects-links{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.projects-links h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C292B;
+  text-transform: uppercase;
+}
+
+.projects-links .projects-link{
+  float: left;
+  width: calc(18% - 20px);
+  height: 150px;
+  margin: 16px 45px 0;
+  background-color: #DEDFE2;
+}
+
+.projects-links .projects-link p{
+  padding-top: 45%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1C292B;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* CONTACT ME */
+
+.contact-info{
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  height: 300px;
+  background-color: #DEDFE2;
+  overflow: hidden;
+}
+
+.contact-info h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C292B;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* PROJECT */
+
+.project-cd h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C292B;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-cd img{
+  display: inline-block;
+  margin-left: 120px;
+  width: 100px;
+  height: auto;
+  padding: 50px 0;
+}
+
+.project-cd article h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C292B;
+  padding-bottom: 20px;
+}
+
+.project-cd article div p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C292B;
+  column-count: 4;
+  column-gap: 20px;
+  column-fill: balance;
+}
+
 /* FOOTER */
 
 footer{
@@ -325,6 +423,21 @@ footer ul li a{
 
 .footer-learn{
   display: none;
+}
+
+.second{
+  width: calc(100% - 80px);
+  height: 15px;
+  margin-top: 5px;
+  padding: 40px 40px;
+  background-color: #FFFFFF;
+}
+
+.second p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #1C292B;
+  text-align: center;
 }
 
 /* MEDIA QUERY FOR FOOTER */
